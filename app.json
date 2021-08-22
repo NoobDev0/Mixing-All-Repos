@@ -1,0 +1,124 @@
+{
+    "name": "Auto Filter Bot V2",
+    "description": "A Filter Bot Which Doesnt Need Manuall Filter Adding",
+    "logo": "https://telegra.ph/file/667e15c821117633d07bd.png",
+    "keywords": [
+        "Auto",
+        "Filter",
+        "Mongo DB"
+    ],
+    "website": "https://github.com/AlbertEinsteinTG",
+    "repository": "https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2",
+    "success_url": "https://telegram.dog/CrazyBotsz",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "DB_URI": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": ""
+        },
+        "USER_SESSION": {
+            "description": "A Pyrogram User Session String. Generated From @PyrogramStringBot",
+            "value": ""
+        },
+        "ARQ_API": { 
+            "description": "get it for free from @ARQRobot", 
+            "required": false 
+        },
+        "SESSION_STRING": {
+            "description": "Session string, read the README to learn how to export it with Pyrogram", 
+            "required": true 
+        }, 
+        "CHAT": { 
+            "description": "ID of Channel or Group where the Bot plays Music", 
+            "required": true
+        },
+        "ADMINS": { 
+            "description": "ID of Users who can use Admin commands(for multiple users seperated by space)", 
+            "required": true
+        },
+        "ADMIN_ONLY": { 
+            "description": "Change it to 'N' if you want to make /play and /dplay available for everyone. By default only admins of CHAT can use it.", 
+            "value": "Y", 
+            "required": false 
+        }, 
+        "MAXIMUM_DURATION": { 
+            "description": "Maximum duration of song to be played using /play or /dplay", 
+            "value": "30", 
+            "required": false
+        }, 
+        "STREAM_URL": { 
+            "description": "URL of Radio station or Youtube live video url to stream with /radio command", 
+            "value": "https://youtu.be/zcrUCvBD16k", 
+            "required": false 
+        },
+        "REPLY_MESSAGE": { 
+            "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.", 
+            "value": "Hello Sir, I am a bot to play music, not havimg time to chat with you.", 
+            "required": false
+        },
+        "OWNER_ID" : { 
+            "description": "An integer of consisting of your owner ID", 
+            "value": "1250450"
+        },
+        "CHANNEL_ID": { 
+            "description": "make a channel (database channel), then make the bot as admin in channel, and it's id", 
+            "value": "-100" 
+        }, 
+        "FORCE_SUB_CHANNEL" : { 
+            "description": "id of the channel or group, if you want enable force sub feature else put 0", 
+            "value": "0" 
+        },
+        "START_MESSAGE" : { 
+            "description": "Optional: start message of bot, use HTML parsemode format", 
+            "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+       },
+       "DATABASE_NAME": {
+            "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
+            "value": "Cluster0",
+            "required": false
+        },
+        "SAVE_USER": {
+            "description": "Do you need to save user details? Usefull for getting userinfo and total user counts. May reduce filter capacity. Give yes or no",
+            "value": "no",
+            "required": false
+        },
+        "AUTH_USERS" : { 
+            "description": "ID of users that can use the bot commands", 
+        "value": ""
+        },
+        "WEBHOOK" : {
+            "description": "No need to change this field!", 
+            "value": "ANYTHING"
+        },
+        "DATABASE_URI2" : { 
+            "description": "Database URL from https://cloud.mongodb.com/", 
+            "value": ""
+        }
+     }, 
+     "formation": {
+         "worker": { 
+              "quantity": 1, 
+              "size": "free" 
+        } 
+     }, 
+     "buildpacks": [ 
+         { 
+             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+         }, 
+         { 
+             "url": "heroku/python" 
+         }
+     ]
+}
+   
