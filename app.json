@@ -27,7 +27,7 @@
             "description": "Your Mongo DB URL Obtained From mongodb.com",
             "value": ""
         },
-        "USER_SESSION": {
+        "USER_SESSION1": {
             "description": "A Pyrogram User Session String. Generated From @PyrogramStringBot",
             "value": ""
         },
@@ -35,7 +35,7 @@
             "description": "get it for free from @ARQRobot", 
             "required": false 
         },
-        "SESSION_STRING": {
+        "USER_SESSION2": {
             "description": "Session string, read the README to learn how to export it with Pyrogram", 
             "required": true 
         }, 
