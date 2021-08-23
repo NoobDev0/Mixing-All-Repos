@@ -19,7 +19,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 DB_URI = os.environ.get("DB_URI")
 
-USER_SESSION = os.environ.get("USER_SESSION")
+USER_SESSION = os.environ.get("USER_SESSION1")
 
 #ADMINS = os.environ.get("ADMINS")
 
