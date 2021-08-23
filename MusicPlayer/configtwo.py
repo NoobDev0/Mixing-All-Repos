@@ -66,7 +66,7 @@ class Config:
     DELAY = int(os.environ.get("DELAY", 10))
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-    SESSION = os.environ.get("SESSION_STRING", "")
+    SESSION = os.environ.get("USER_SESSION", "")
     playlist=[]
     msg = {}
 
